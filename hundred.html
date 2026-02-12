@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokemon Pokedex</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="javascript.js" defer></script>
+</head>
+
+<body data-variant="hundred"> 
+  <header>
+    <h1>Pokemon Pokedex</h1>
+	<img src = "images/pokeball.png"> 
+  </header>
+
+  <nav class="navbar">
+	<ul> 
+      <li><a href="index.html">Home</a></li>
+		<li class ="menu">Pokedex
+		  <ul class="submenu">
+			<li><a href="normal.html">Normal</a></li>
+			<li><a href="shiny.html">Shiny</a></li>
+			<li><a href="mega.html">Mega</a></li>
+			<li><a href="g-max.html">G-Max</a></li>
+			<li><a href="hundred.html">100%</a></li>
+		  </ul>
+		</li> 
+    </ul>
+  </nav>
+
+  <article>
+    <h3>Choose A Pokedex Region - 100% Pokemon</h3>
+    <p id="regions">
+      <span data-region="kanto" class="active">Kanto</span>|
+      <span data-region="johto">Johto</span>|
+      <span data-region="hoenn">Hoenn</span>|
+      <span data-region="sinnoh">Sinnoh</span>|
+      <span data-region="unova">Unova</span>|
+      <span data-region="kalos">Kalos</span>|
+      <span data-region="alola">Alola</span>|
+      <span data-region="galar">Galar</span>|
+      <span data-region="paldea">Paldea</span>
+    </p>
+    <hr>
+
+
+<div id="filters">
+  <button data-filter="all">Show All</button>
+  <button data-filter="caught">Show Caught</button>
+  <button data-filter="notcaught">Show Not Caught</button>
+</div>
+
+<div class = "search-wrapper"> 
+  <label for="search"> Search Pokemon</label> 
+  <input type="search" id ="search">
+</div> 
+
+<div id="counter">Caught: 0 / 0</div>
+
+<section id="kanto" class="region grid active">
+  <section class="column"><img src="images/normal/bulbasaur.png" alt="Bulbasaur"><h3>#1 - Bulbasaur</h3></section>
+<section class="column"><img src="images/normal/ivysaur.png" alt="Ivysaur"><h3>#2 - Ivysaur</h3></section>
+<section class="column"><img src="images/normal/venusaur-f.png" alt="Venusaur"><h3>#3 - Venusaur</h3></section>
+<section class="column"><img src="images/normal/charmander.png" alt="Charmander"><h3>#4 - Charmander</h3></section>
+<section class="column"><img src="images/normal/charmeleon.png" alt="Charmeleon"><h3>#5 - Charmeleon</h3></section>
+<section class="column"><img src="images/normal/charizard.png" alt="Charizard"><h3>#6 - Charizard</h3></section>
+<section class="column"><img src="images/normal/squirtle.png" alt="Squirtle"><h3>#7 - Squirtle</h3></section>
+<section class="column"><img src="images/normal/wartortle.png" alt="Wartortle"><h3>#8 - Wartortle</h3></section>
+<section class="column"><img src="images/normal/blastoise.png" alt="Blastoise"><h3>#9 - Blastoise</h3></section>
+<section class="column"><img src="images/normal/caterpie.png" alt="Caterpie"><h3>#10 - Caterpie</h3></section>
+<section class="column"><img src="images/normal/metapod.png" alt="Metapod"><h3>#11 - Metapod</h3></section>
+<section class="column"><img src="images/normal/butterfree-f.png" alt="Butterfree"><h3>#12 - Butterfree</h3></section>
+<section class="column"><img src="images/normal/weedle.png" alt="Weedle"><h3>#13 - Weedle</h3></section>
+<section class="column"><img src="images/normal/kakuna.png" alt="Kakuna"><h3>#14 - Kakuna</h3></section>
+<section class="column"><img src="images/normal/beedrill.png" alt="Beedrill"><h3>#15 - Beedrill</h3></section>
+<section class="column"><img src="images/normal/pidgey.png" alt="Pidgey"><h3>#16 - Pidgey</h3></section>
+<section class="column"><img src="images/normal/pidgeotto.png" alt="Pidgeotto"><h3>#17 - Pidgeotto</h3></section>
+<section class="column"><img src="images/normal/pidgeot.png" alt="Pidgeot"><h3>#18 - Pidgeot</h3></section>
+<section class="column"><img src="images/normal/rattata-f.png" alt="Rattata"><h3>#19 - Rattata</h3></section>
+<section class="column"><img src="images/normal/raticate-f.png" alt="Raticate"><h3>#20 - Raticate</h3></section>
+<section class="column"><img src="images/normal/spearow.png" alt="Spearow"><h3>#21 - Spearow</h3></section>
+<section class="column"><img src="images/normal/fearow.png" alt="Fearow"><h3>#22 - Fearow</h3></section>
+<section class="column"><img src="images/normal/ekans.png" alt="Ekans"><h3>#23 - Ekans</h3></section>
+<section class="column"><img src="images/normal/arbok.png" alt="Arbok"><h3>#24 - Arbok</h3></section>
+<section class="column"><img src="images/normal/pikachu-f.png" alt="Pikachu"><h3>#25 - Pikachu</h3></section>
+<section class="column"><img src="images/normal/raichu-f.png" alt="Raichu"><h3>#26 - Raichu</h3></section>
+<section class="column"><img src="images/normal/sandshrew.png" alt="Sandshrew"><h3>#27 - Sandshrew</h3></section>
+<section class="column"><img src="images/normal/sandslash.png" alt="Sandslash"><h3>#28 - Sandslash</h3></section>
+<section class="column"><img src="images/normal/nidoran-f.png" alt="Nidoran♀"><h3>#29 - Nidoran♀</h3></section>
+<section class="column"><img src="images/normal/nidorina.png" alt="Nidorina"><h3>#30 - Nidorina</h3></section>
+<section class="column"><img src="images/normal/nidoqueen.png" alt="Nidoqueen"><h3>#31 - Nidoqueen</h3></section>
+<section class="column"><img src="images/normal/nidoran-m.png" alt="Nidoran♂"><h3>#32 - Nidoran♂</h3></section>
+<section class="column"><img src="images/normal/nidorino.png" alt="Nidorino"><h3>#33 - Nidorino</h3></section>
+<section class="column"><img src="images/normal/nidoking.png" alt="Nidoking"><h3>#34 - Nidoking</h3></section>
+<section class="column"><img src="images/normal/clefairy.png" alt="Clefairy"><h3>#35 - Clefairy</h3></section>
+<section class="column"><img src="images/normal/clefable.png" alt="Clefable"><h3>#36 - Clefable</h3></section>
+<section class="column"><img src="images/normal/vulpix.png" alt="Vulpix"><h3>#37 - Vulpix</h3></section>
+<section class="column"><img src="images/normal/ninetales.png" alt="Ninetales"><h3>#38 - Ninetales</h3></section>
+<section class="column"><img src="images/normal/jigglypuff.png" alt="Jigglypuff"><h3>#39 - Jigglypuff</h3></section>
+<section class="column"><img src="images/normal/wigglytuff.png" alt="Wigglytuff"><h3>#40 - Wigglytuff</h3></section>
+<section class="column"><img src="images/normal/zubat-f.png" alt="Zubat"><h3>#41 - Zubat</h3></section>
+<section class="column"><img src="images/normal/golbat-f.png" alt="Golbat"><h3>#42 - Golbat</h3></section>
+<section class="column"><img src="images/normal/oddish.png" alt="Oddish"><h3>#43 - Oddish</h3></section>
+<section class="column"><img src="images/normal/gloom-f.png" alt="Gloom"><h3>#44 - Gloom</h3></section>
+<section class="column"><img src="images/normal/vileplume-f.png" alt="Vileplume"><h3>#45 - Vileplume</h3></section>
+<section class="column"><img src="images/normal/paras.png" alt="Paras"><h3>#46 - Paras</h3></section>
+<section class="column"><img src="images/normal/parasect.png" alt="Parasect"><h3>#47 - Parasect</h3></section>
+<section class="column"><img src="images/normal/venonat.png" alt="Venonat"><h3>#48 - Venonat</h3></section>
+<section class="column"><img src="images/normal/venomoth.png" alt="Venomoth"><h3>#49 - Venomoth</h3></section>
+<section class="column"><img src="images/normal/diglett.png" alt="Diglett"><h3>#50 - Diglett</h3></section>
+<section class="column"><img src="images/normal/dugtrio.png" alt="Dugtrio"><h3>#51 - Dugtrio</h3></section>
+<section class="column"><img src="images/normal/meowth.png" alt="Meowth"><h3>#52 - Meowth</h3></section>
+<section class="column"><img src="images/normal/persian.png" alt="Persian"><h3>#53 - Persian</h3></section>
+<section class="column"><img src="images/normal/psyduck.png" alt="Psyduck"><h3>#54 - Psyduck</h3></section>
+<section class="column"><img src="images/normal/golduck.png" alt="Golduck"><h3>#55 - Golduck</h3></section>
+<section class="column"><img src="images/normal/mankey.png" alt="Mankey"><h3>#56 - Mankey</h3></section>
+<section class="column"><img src="images/normal/primeape.png" alt="Primeape"><h3>#57 - Primeape</h3></section>
+<section class="column"><img src="images/normal/growlithe.png" alt="Growlithe"><h3>#58 - Growlithe</h3></section>
+<section class="column"><img src="images/normal/arcanine.png" alt="Arcanine"><h3>#59 - Arcanine</h3></section>
+<section class="column"><img src="images/normal/poliwag.png" alt="Poliwag"><h3>#60 - Poliwag</h3></section>
+<section class="column"><img src="images/normal/poliwhirl.png" alt="Poliwhirl"><h3>#61 - Poliwhril</h3></section>
+<section class="column"><img src="images/normal/poliwrath.png" alt="Poliwrath"><h3>#62 - Poliwrath</h3></section>
+<section class="column"><img src="images/normal/abra.png" alt="Abra"><h3>#63 - Abra</h3></section>
+<section class="column"><img src="images/normal/kadabra-f.png" alt="Kadabra"><h3>#64 - Kadabra</h3></section>
+<section class="column"><img src="images/normal/alakazam-f.png" alt="Alakazam"><h3>#65 - Alakazam</h3></section>
+<section class="column"><img src="images/normal/machop.png" alt="Machop"><h3>#66 - Machop</h3></section>
+<section class="column"><img src="images/normal/machoke.png" alt="Machoke"><h3>#67 - Machoke</h3></section>
+<section class="column"><img src="images/normal/machamp.png" alt="Machamp"><h3>#68 - Machamp</h3></section>
+<section class="column"><img src="images/normal/bellsprout.png" alt="Bellsprout"><h3>#69 - Bellsprout</h3></section>
+<section class="column"><img src="images/normal/weepinbell.png" alt="Weepinbell"><h3>#70 - Weepinbell</h3></section>
+<section class="column"><img src="images/normal/victreebel.png" alt="Victreebel"><h3>#71 - Victreebel</h3></section>
+<section class="column"><img src="images/normal/tentacool.png" alt="Tentacool"><h3>#72 - Tentacool</h3></section>
+<section class="column"><img src="images/normal/tentacruel.png" alt="Tentacruel"><h3>#73 - Tentacruel</h3></section>
+<section class="column"><img src="images/normal/geodude.png" alt="Geodude"><h3>#74 - Geodude</h3></section>
+<section class="column"><img src="images/normal/graveler.png" alt="Graveler"><h3>#75 - Graveler</h3></section>
+<section class="column"><img src="images/normal/golem.png" alt="Golem"><h3>#76 - Golem</h3></section>
+<section class="column"><img src="images/normal/ponyta.png" alt="Ponyta"><h3>#77 - Ponyta</h3></section>
+<section class="column"><img src="images/normal/rapidash.png" alt="Rapidash"><h3>#78 - Rapidash</h3></section>
+<section class="column"><img src="images/normal/slowpoke.png" alt="Slowpoke"><h3>#79 - Slowpoke</h3></section>
+<section class="column"><img src="images/normal/slowbro.png" alt="Slowbro"><h3>#80 - Slowbro</h3></section>
+<section class="column"><img src="images/normal/magnemite.png" alt="Magnemite"><h3>#81 - Magnemite</h3></section>
+<section class="column"><img src="images/normal/magneton.png" alt="Magneton"><h3>#82 - Magneton</h3></section>
+<section class="column"><img src="images/normal/farfetchd.png" alt="Farfetch'd"><h3>#83 - Farfetch'd</h3></section>
+<section class="column"><img src="images/normal/doduo-f.png" alt="Doduo"><h3>#84 - Doduo</h3></section>
+<section class="column"><img src="images/normal/dodrio-f.png" alt="Dodrio"><h3>#85 - Dodrio</h3></section>
+<section class="column"><img src="images/normal/seel.png" alt="Seel"><h3>#86 - Seel</h3></section>
+<section class="column"><img src="images/normal/dewgong.png" alt="Dewgong"><h3>#87 - Dewgong</h3></section>
+<section class="column"><img src="images/normal/grimer.png" alt="Grimer"><h3>#88 - Grimer</h3></section>
+<section class="column"><img src="images/normal/muk.png" alt="Muk"><h3>#89 - Muk</h3></section>
+<section class="column"><img src="images/normal/shellder.png" alt="Shellder"><h3>#90 - Shellder</h3></section>
+<section class="column"><img src="images/normal/cloyster.png" alt="Cloyster"><h3>#91 - Cloyster</h3></section>
+<section class="column"><img src="images/normal/gastly.png" alt="Gastly"><h3>#92 - Gastly</h3></section>
+<section class="column"><img src="images/normal/haunter.png" alt="Haunter"><h3>#93 - Haunter</h3></section>
+<section class="column"><img src="images/normal/gengar.png" alt="Gengar"><h3>#94 - Gengar</h3></section>
+<section class="column"><img src="images/normal/onix.png" alt="Onix"><h3>#95 - Onix</h3></section>
+<section class="column"><img src="images/normal/drowzee.png" alt="Drowzee"><h3>#96 - Drowzee</h3></section>
+<section class="column"><img src="images/normal/hypno-f.png" alt="Hypno"><h3>#97 - Hypno</h3></section>
+<section class="column"><img src="images/normal/krabby.png" alt="Krabby"><h3>#98 - Krabby</h3></section>
+<section class="column"><img src="images/normal/kingler.png" alt="Kingler"><h3>#99 - Kingler</h3></section>
+<section class="column"><img src="images/normal/voltorb.png" alt="Voltorb"><h3>#100 - Voltorb</h3></section>
+<section class="column"><img src="images/normal/electrode.png" alt="Electrode"><h3>#101 - Electrode</h3></section>
+<section class="column"><img src="images/normal/exeggcute.png" alt="Exeggcute"><h3>#102 - Exeggcute</h3></section>
+<section class="column"><img src="images/normal/exeggutor.png" alt="Exeggutor"><h3>#103 - Exeggutor</h3></section>
+<section class="column"><img src="images/normal/cubone.png" alt="Cubone"><h3>#104 - Cubone</h3></section>
+<section class="column"><img src="images/normal/marowak.png" alt="Marowak"><h3>#105 - Marowak</h3></section>
+<section class="column"><img src="images/normal/hitmonlee.png" alt="Hitmonlee"><h3>#106 - Hitmonlee</h3></section>
+<section class="column"><img src="images/normal/hitmonchan.png" alt="Hitmonchan"><h3>#107 - Hitmonchan</h3></section>
+<section class="column"><img src="images/normal/lickitung.png" alt="Lickitung"><h3>#108 - Lickitung</h3></section>
+<section class="column"><img src="images/normal/koffing.png" alt="Koffing"><h3>#109 - Koffing</h3></section>
+<section class="column"><img src="images/normal/weezing.png" alt="Weezing"><h3>#110 - Weezing</h3></section>
+<section class="column"><img src="images/normal/rhyhorn-f.png" alt="Rhyhorn"><h3>#111 - Rhyhorn</h3></section>
+<section class="column"><img src="images/normal/rhydon-f.png" alt="Rhydon"><h3>#112 - Rhydon</h3></section>
+<section class="column"><img src="images/normal/chansey.png" alt="Chansey"><h3>#113 - Chansey</h3></section>
+<section class="column"><img src="images/normal/tangela.png" alt="Tangela"><h3>#114 - Tangela</h3></section>
+<section class="column"><img src="images/normal/kangaskhan.png" alt="Kangaskhan"><h3>#115 - Kangaskhan</h3></section>
+<section class="column"><img src="images/normal/horsea.png" alt="Horsea"><h3>#116 - Horsea</h3></section>
+<section class="column"><img src="images/normal/seadra.png" alt="Seadra"><h3>#117 - Seadra</h3></section>
+<section class="column"><img src="images/normal/goldeen-f.png" alt="Goldeen"><h3>#118 - Goldeen</h3></section>
+<section class="column"><img src="images/normal/seaking-f.png" alt="Seaking"><h3>#119 - Seaking</h3></section>
+<section class="column"><img src="images/normal/staryu.png" alt="Staryu"><h3>#120 - Staryu</h3></section>
+<section class="column"><img src="images/normal/starmie.png" alt="Starmie"><h3>#121 - Starmie</h3></section>
+<section class="column"><img src="images/normal/mr-mime.png" alt="Mr. Mime"><h3>#122 - Mr. Mime</h3></section>
+<section class="column"><img src="images/normal/scyther-f.png" alt="Scyther"><h3>#123 - Scyther</h3></section>
+<section class="column"><img src="images/normal/jynx.png" alt="Jynx"><h3>#124 - Jynx</h3></section>
+<section class="column"><img src="images/normal/electabuzz.png" alt="Electabuzz"><h3>#125 - Electabuzz</h3></section>
+<section class="column"><img src="images/normal/magmar.png" alt="Magmar"><h3>#126 - Magmar</h3></section>
+<section class="column"><img src="images/normal/pinsir.png" alt="Pinsir"><h3>#127 - Pinsir</h3></section>
+<section class="column"><img src="images/normal/tauros.png" alt="Tauros"><h3>#128 - Tauros</h3></section>
+<section class="column"><img src="images/normal/magikarp-f.png" alt="Magikarp"><h3>#129 - Magikarp</h3></section>
+<section class="column"><img src="images/normal/gyarados-f.png" alt="Gyarados"><h3>#130 - Gyarados</h3></section>
+<section class="column"><img src="images/normal/lapras.png" alt="Lapras"><h3>#131 - Lapras</h3></section>
+<section class="column"><img src="images/normal/ditto.png" alt="Ditto"><h3>#132 - Ditto</h3></section>
+<section class="column"><img src="images/normal/eevee-f.png" alt="Eevee"><h3>#133 - Eevee</h3></section>
+<section class="column"><img src="images/normal/vaporeon.png" alt="Vaporeon"><h3>#134 - Vaporeon</h3></section>
+<section class="column"><img src="images/normal/jolteon.png" alt="Jolteon"><h3>#135 - Jolteon</h3></section>
+<section class="column"><img src="images/normal/flareon.png" alt="Flareon"><h3>#136 - Flareon</h3></section>
+<section class="column"><img src="images/normal/porygon.png" alt="Porygon"><h3>#137 - Porygon</h3></section>
+<section class="column"><img src="images/normal/omanyte.png" alt="Omanyte"><h3>#138 - Omanyte</h3></section>
+<section class="column"><img src="images/normal/omastar.png" alt="Omastar"><h3>#139 - Omastar</h3></section>
+<section class="column"><img src="images/normal/kabuto.png" alt="Kabuto"><h3>#140 - Kabuto</h3></section>
+<section class="column"><img src="images/normal/kabutops.png" alt="Kabutops"><h3>#141 - Kabutops</h3></section>
+<section class="column"><img src="images/normal/aerodactyl.png" alt="Aerodactyl"><h3>#142 - Aerodactyl</h3></section>
+<section class="column"><img src="images/normal/snorlax.png" alt="Snorlax"><h3>#143 - Snorlax</h3></section>
+<section class="column"><img src="images/normal/articuno.png" alt="Articuno"><h3>#144 - Articuno</h3></section>
+<section class="column"><img src="images/normal/zapdos.png" alt="Zapdos"><h3>#145 - Zapdos</h3></section>
+<section class="column"><img src="images/normal/moltres.png" alt="Moltres"><h3>#146 - Moltres</h3></section>
+<section class="column"><img src="images/normal/dratini.png" alt="Dratini"><h3>#147 - Dratini</h3></section>
+<section class="column"><img src="images/normal/dragonair.png" alt="Dragonair"><h3>#148 - Dragonair</h3></section>
+<section class="column"><img src="images/normal/dragonite.png" alt="Dragonite"><h3>#149 - Dragonite</h3></section>
+<section class="column"><img src="images/normal/mewtwo.png" alt="Mewtwo"><h3>#150 - Mewtwo</h3></section>
+<section class="column"><img src="images/normal/mew.png" alt="Mew"><h3>#151 - Mew</h3></section>
+</section>
+
+<!-- Johto -->
+<section id="johto" class="region grid"> 
+	<p> No data yet</p> 
+</section> 
+
+<!-- Hoenn -->
+<section id="hoenn" class="region grid"> 
+	<p> No data yet</p> 
+</section> 
+
+<!-- Sinnoh -->
+<section id="sinnoh" class="region grid"> 
+	<p> No data yet</p> 
+</section> 
+
+<!-- Unova -->
+<section id="unova" class="region grid"> 
+	<p> No data yet</p> 
+</section> 
+
+<!-- Kalos -->
+<section id="kalos" class="region grid"> 
+	<p> No data yet</p> 
+</section> 
+
+<!-- Alola -->
+<section id="alola" class="region grid"> 
+	<p> No data yet</p> 
+</section> 
+
+<!-- Galar -->
+<section id="galar" class="region grid"> 
+	<p> No data yet</p> 
+</section> 
+
+<!-- Paldea -->
+<section id="paldea" class="region grid"> 
+	<p> No data yet</p> 
+</section> 
+
+	
+  </article>
+
+  <footer>
+  <a href="form.html">Contact Us </a>|
+  <a href = "about.html">About</a>
+  </footer>
+</body>
+</html>
+ 
+ 

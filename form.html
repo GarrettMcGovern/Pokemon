@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokemon Pokedex</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="javascript.js" defer></script>
+</head> 
+<body> 
+	<header>
+    <h1>Pokemon Pokedex</h1>
+	<img src = "images/pokeball.png"> 
+  </header>
+
+<nav class="navbar">
+	<ul> 
+      <li><a href="index.html">Home</a></li>
+		<li class ="menu">Pokedex
+		  <ul class="submenu">
+			<li><a href="normal.html">Normal</a></li>
+			<li><a href="shiny.html">Shiny</a></li>
+			<li><a href="mega.html">Mega</a></li>
+			<li><a href="g-max.html">G-Max</a></li>
+			<li><a href="hundred.html">100%</a></li>
+		  </ul>
+		</li> 
+    </ul>
+  </nav>
+  
+ <article> 
+	<h3>Feedback Form</h3>
+	
+	<form action = "mailto:gmcgovern@email.davenport.edu" method = "post" enctype = "text/plain"> 
+		<h4>Contact Info</h4>
+		
+	<fieldset class = "contactinfo"> 
+		<p>* Indicates a required field</p>
+	<div class = "form-row">
+		<label for ="fname">First Name*</label> 
+		<input type ="text" id="fname" name ="fname" required> 
+	</div> 
+		<br>
+	
+	<div class = "form-row">
+		<label for ="lname">Last Name*</label> 
+		<input type ="text" id="lname" name ="lname" required>
+	</div> 
+	<br> 
+
+	<div class = "form-row">
+		<label for ="email">Email*</label> 
+		<input type ="email" id="email" name ="email" required> 
+	</div> 	
+		<br>
+	
+	<div class = "form-row">
+		<label for ="phone">Phone</label> 
+		<input type ="phne" id="phone" name ="phone"> 
+	</div> 
+		<br>
+	
+	<div class = "form-row">
+		<label for="trainer">Trainer Name</label>
+		<input type="text" id="trainer" name="trainer">
+	</div>
+	</fieldset>
+	
+	<fieldset class = "feedback">
+	
+		<h4>Feedback</h4> 
+		
+		<h5>What dex is your favorite?</h5> 
+		
+		<br>
+		
+		<input type = "radio" id ="normal" name="favorite" value = "Normal"> 
+		<label for ="normal">Normal</label>
+		
+		<input type = "radio" id ="shiny" name="favorite" value = "Shiny"> 
+		<label for ="shiny">Shiny</label>
+		
+		
+		<input type = "radio" id ="mega" name="favorite" value = "Mega"> 
+		<label for ="Mega">Mega</label>
+		
+		<input type = "radio" id ="Gmax" name="favorite" value = "Gmax"> 
+		<label for ="Gmax">G-Max</label>
+		
+		<input type = "radio" id ="hundred" name="favorite" value = "hundred"> 
+		<label for ="hundred">100%</label>
+		
+		<br><br>
+		
+		<h5>What dex's have you completed?</h5>
+		
+		<br>
+		
+		<input type = "checkbox" id ="normal" name="favorite" value = "Normal"> 
+		<label for ="normal">Normal</label>
+		
+		<input type = "checkbox" id ="shiny" name="favorite" value = "Shiny"> 
+		<label for ="shiny">Shiny</label>
+		
+		
+		<input type = "checkbox" id ="mega" name="favorite" value = "Mega"> 
+		<label for ="Mega">Mega</label>
+		
+		<input type = "checkbox" id ="Gmax" name="favorite" value = "Gmax"> 
+		<label for ="Gmax">G-Max</label>
+		
+		<input type = "checkbox" id ="hundred" name="favorite" value = "hundred"> 
+		<label for ="hundred">100%</label>
+		
+		<br> <br>
+		
+		<h5>What Region is your Favorite?</h5>
+		<select id="region" name="region">
+			<option value="kanto">Kanto</option>
+			<option value="johto">Johto</option>
+			<option value="hoenn">Hoenn</option>
+			<option value="hoenn">Sinnoh</option>
+			<option value="hoenn">Unova</option>
+			<option value="hoenn">Kalos</option>
+			<option value="hoenn">Alola</option>
+			<option value="hoenn">Galar</option>
+			<option value="hoenn">Paldea</option>
+		</select>
+
+		<br> <br>
+		
+		<h5>What improvements should be made to the site?</h5> 
+		<textarea name = "comment" rows = "4" cols="50"></textarea> 
+	</fieldset> 	
+	
+	<br>
+	<input id= "submitBtn" type="submit" value="Submit Feedback">
+	
+	</form>
+ </article>
+ <footer> 
+ <a href="form.html">Contact Us</a>
+ </footer> 
+
+</body> 
+</html> 

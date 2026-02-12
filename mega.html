@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon Pokedex</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="javascript.js" defer></script>
+</head>
+<body data-variant="mega">
+  <header>
+    <h1>Pokemon Pokedex</h1>
+	<img src = "images/pokeball.png"> 
+  </header>
+
+  <nav class="navbar">
+	<ul> 
+      <li><a href="index.html">Home</a></li>
+		<li class ="menu">Pokedex
+		  <ul class="submenu">
+			<li><a href="normal.html">Normal</a></li>
+			<li><a href="shiny.html">Shiny</a></li>
+			<li><a href="mega.html">Mega</a></li>
+			<li><a href="g-max.html">G-Max</a></li>
+			<li><a href="hundred.html">100%</a></li>
+		  </ul>
+		</li> 
+    </ul>
+  </nav>
+
+  <article>
+    <h3>Choose A Pokedex Region - Mega Pokemon</h3>
+    <p id="regions">
+      <span data-region="kanto" class="active">Kanto</span>|
+      <span data-region="johto">Johto</span>|
+      <span data-region="hoenn">Hoenn</span>|
+      <span data-region="sinnoh">Sinnoh</span>|
+      <span data-region="unova">Unova</span>|
+      <span data-region="kalos">Kalos</span>|
+      <span data-region="alola">Alola</span>|
+      <span data-region="galar">Galar</span>|
+      <span data-region="paldea">Paldea</span>
+    </p>
+    <hr>
+	
+	<div id="filters">
+  <button data-filter="all">Show All</button>
+  <button data-filter="caught">Show Caught</button>
+  <button data-filter="notcaught">Show Not Caught</button>
+</div>
+
+<div class = "search-wrapper"> 
+  <label for="search"> Search Pokemon</label> 
+  <input type="search" id ="search">
+</div> 
+
+<div id="counter">Caught: 0 / 0</div>
+<p> Hover over the image to see the shiny mega</p>
+
+
+    <!-- Kanto Mega Pokémon -->
+    <section id="kanto" class="region grid active">
+      <section class="column">
+        <img src="images/mega/venusaur-mega.png" alt="Mega Venusaur">
+        <h3>Mega #003 - Venusaur</h3>
+      </section>
+      <section class="column">
+        <img src="images/mega/charizard-mega-x.png" alt="Mega Charizard X">
+        <h3>Mega #006 - Charizard X</h3>
+      </section>
+      <section class="column">
+        <img src="images/mega/charizard-mega-y.png" alt="Mega Charizard Y">
+        <h3>Mega #006 - Charizard Y</h3>
+	  </section>
+      <section class="column">
+        <img src="images/mega/blastoise-mega.png" alt="Mega Blastoise">
+        <h3>Mega #009 - Blastoise</h3>
+      </section>
+      <section class="column">
+        <img src="images/mega/beedrill-mega.png" alt="Mega Beedrill">
+        <h3>Mega #015 - Beedrill</h3>
+      </section>
+      <section class="column">
+        <img src="images/mega/pidgeot-mega.png" alt="Mega Pidgeot">
+        <h3>Mega #018 - Pidgeot</h3>
+      </section>
+      <section class="column">
+        <img src="images/mega/alakazam-mega.png" alt="Mega Alakazam">
+        <h3>Mega #065 - Alakazam</h3>
+      </section>
+      <section class="column">
+        <img src="images/mega/slowbro-mega.png" alt="Mega Slowbro">
+        <h3>Mega #080 - Slowbro</h3>
+      </section>
+      <section class="column">
+        <img src="images/mega/gengar-mega.png" alt="Mega Gengar">
+        <h3>Mega #094 - Gengar</h3>
+      </section>
+      <section class="column">
+        <img src="images/mega/kangaskhan-mega.png" alt="Mega Kangaskhan">
+        <h3>Mega #115 - Kangaskhan</h3>
+      </section>
+      <section class="column">
+        <img src="images/mega/pinsir-mega.png" alt="Mega Pinsir">
+        <h3>Mega #127 - Pinsir</h3>
+      </section>
+      <section class="column">
+        <img src="images/mega/gyarados-mega.png" alt="Mega Gyarados">
+        <h3>Mega #130 - Gyarados</h3>
+      </section>
+      <section class="column">
+        <img src="images/mega/aerodactyl-mega.png" alt="Mega Aerodactyl">
+        <h3>Mega #142 - Aerodactyl</h3>
+      </section>
+      <section class="column">
+        <img src="images/mega/mewtwo-mega-x.png" alt="Mega Mewtwo X">
+        <h3>Mega #150 - Mewtwo X</h3>
+      </section>
+      <section class="column">
+        <img src="images/mega/mewtwo-mega-y.png" alt="Mega Mewtwo Y">
+        <h3>Mega #150 - Mewtwo Y</h3>
+      </section>
+    </section>
+     
+
+    <!-- Johto Mega Pokémon -->
+	<section id="johto" class="region grid">
+	  <div class="column">
+		<img src="images/mega/ampharos-mega.png" alt="Mega Ampharos">
+		<h3>Mega #181 - Ampharos</h3>
+	  </div>
+	  <div class="column">
+		<img src="images/mega/steelix-mega.png" alt="Mega Steelix">
+		<h3>Mega #208 - Steelix</h3>
+	  </div>
+	  <div class="column">
+		<img src="images/mega/scizor-mega.png" alt="Mega Scizor">
+		<h3>Mega #212 - Scizor</h3>
+	  </div>
+	  <div class="column">
+		<img src="images/mega/heracross-mega.png" alt="Mega Heracross">
+		<h3>Mega #214 - Heracross</h3>
+	  </div>
+	  <div class="column">
+		<img src="images/mega/houndoom-mega.png" alt="Mega Houndoom">
+		<h3>Mega #229 - Houndoom</h3>
+	  </div>
+	  <div class="column">
+		<img src="images/mega/tyranitar-mega.png" alt="Mega Tyranitar">
+		<h3>Mega #248 - Tyranitar</h3>
+	  </div>
+	</section>
+
+    <!-- Hoenn Mega Pokémon -->
+<section id="hoenn" class="region grid">
+  <section class="column">
+    <img src="images/mega/sceptile-mega.png" alt="Mega Sceptile">
+    <h3>Mega #254 - Sceptile</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/blaziken-mega.png" alt="Mega Blaziken">
+    <h3>Mega #257 - Blaziken</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/swampert-mega.png" alt="Mega Swampert">
+    <h3>Mega #260 - Swampert</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/gardevoir-mega.png" alt="Mega Gardevoir">
+    <h3>Mega #282 - Gardevoir</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/sableye-mega.png" alt="Mega Sableye">
+    <h3>Mega #302 - Sableye</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/mawile-mega.png" alt="Mega Mawile">
+    <h3>Mega #303 - Mawile</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/aggron-mega.png" alt="Mega Aggron">
+    <h3>Mega #306 - Aggron</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/medicham-mega.png" alt="Mega Medicham">
+    <h3>Mega #308 - Medicham</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/manectric-mega.png" alt="Mega Manectric">
+    <h3>Mega #310 - Manectric</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/sharpedo-mega.png" alt="Mega Sharpedo">
+    <h3>Mega #319 - Sharpedo</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/camerupt-mega.png" alt="Mega Camerupt">
+    <h3>Mega #323 - Camerupt</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/altaria-mega.png" alt="Mega Altaria">
+    <h3>Mega #334 - Altaria</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/banette-mega.png" alt="Mega Banette">
+    <h3>Mega #354 - Banette</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/absol-mega.png" alt="Mega Absol">
+    <h3>Mega #359 - Absol</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/glalie-mega.png" alt="Mega Glalie">
+    <h3>Mega #362 - Glalie</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/salamence-mega.png" alt="Mega Salamence">
+    <h3>Mega #373 - Salamence</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/metagross-mega.png" alt="Mega Metagross">
+    <h3>Mega #376 - Metagross</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/latias-mega.png" alt="Mega Latias">
+    <h3>Mega #380 - Latias</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/latios-mega.png" alt="Mega Latios">
+    <h3>Mega #381 - Latios</h3>
+  </section>
+   <section class="column">
+    <img src="images/mega/rayquaza-mega.png" alt="Mega Rayquaza">
+    <h3>Mega #384 - Rayquaza</h3>
+  </section>
+</section>
+
+<!-- Sinnoh Mega Pokemon -->
+<section id="sinnoh" class="region grid">
+  <section class="column">
+    <img src="images/mega/lopunny-mega.png" alt="Mega Lopunny">
+    <h3>Mega #428 - Lopunny</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/garchomp-mega.png" alt="Mega Garchomp">
+    <h3>Mega #445 - Garchomp</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/lucario-mega.png" alt="Mega Lucario">
+    <h3>Mega #448 - Lucario</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/abomasnow-mega.png" alt="Mega Abomasnow">
+    <h3>Mega #460 - Abomasnow</h3>
+  </section>
+  <section class="column">
+    <img src="images/mega/gallade-mega.png" alt="Mega Gallade">
+    <h3>Mega #475 - Gallade</h3>
+  </section>
+</section>
+
+<!-- Unova Mega Pokémon -->
+<section id="unova" class="region grid">
+  <section class="column">
+    <img src="images/mega/audino-mega.png" alt="Mega Audino">
+    <h3>Mega #531 - Audino</h3>
+  </section>
+</section>
+
+<!-- Kalos Mega Pokémon -->
+<section id="kalos" class="region grid">
+  <section class="column">
+    <img src="images/mega/diancie-mega.png" alt="Mega Diancie">
+    <h3>Mega #719 - Diancie</h3>
+  </section>
+</section>
+
+<!-- Alola, Galar, Paldea -->
+    <section id="alola" class="region grid">
+      <p>No Mega Pokémon in Alola yet.</p>
+    </section>
+    <section id="galar" class="region grid">
+      <p>No Mega Pokémon in Galar yet.</p>
+    </section>
+    <section id="paldea" class="region grid">
+      <p>No Mega Pokémon in Paldea yet.</p>
+    </section>
+
+ 
+  </article>
+
+  <footer>
+    <a href="form.html">Contact Us </a>|
+  <a href = "about.html">About</a>
+  </footer>
+</body>
+</html>

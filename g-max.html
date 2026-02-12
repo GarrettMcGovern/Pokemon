@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokemon Pokedex</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="javascript.js" defer></script>
+</head>
+
+<body data-variant="gmax"> 
+  <header>
+    <h1>Pokemon Pokedex</h1>
+	<img src = "images/pokeball.png"> 
+  </header>
+
+  <nav class="navbar">
+	<ul> 
+      <li><a href="index.html">Home</a></li>
+		<li class ="menu">Pokedex
+		  <ul class="submenu">
+			<li><a href="normal.html">Normal</a></li>
+			<li><a href="shiny.html">Shiny</a></li>
+			<li><a href="mega.html">Mega</a></li>
+			<li><a href="g-max.html">G-Max</a></li>
+			<li><a href="hundred.html">100%</a></li>
+		  </ul>
+		</li> 
+    </ul>
+  </nav>
+
+  <article>
+    <h3>Choose A Pokedex Region - Gigantamax Pokemon</h3>
+    <p id="regions">
+      <span data-region="kanto" class="active">Kanto</span>|
+      <span data-region="johto">Johto</span>|
+      <span data-region="hoenn">Hoenn</span>|
+      <span data-region="sinnoh">Sinnoh</span>|
+      <span data-region="unova">Unova</span>|
+      <span data-region="kalos">Kalos</span>|
+      <span data-region="alola">Alola</span>|
+      <span data-region="galar">Galar</span>|
+      <span data-region="paldea">Paldea</span>
+    </p>
+    <hr>
+	
+	<div id="filters">
+  <button data-filter="all">Show All</button>
+  <button data-filter="caught">Show Caught</button>
+  <button data-filter="notcaught">Show Not Caught</button>
+</div>
+
+<div class = "search-wrapper"> 
+  <label for="search"> Search Pokemon</label> 
+  <input type="search" id ="search">
+</div> 
+
+<div id="counter">Caught: 0 / 0</div>
+
+<p> Hover over the image to see the shiny G-max</p>
+
+ <section id="kanto" class="region grid active">
+  <section class="column">
+    <img src="images/g-max/venusaur-gigantamax.png" alt="Gigantamax Venusaur">
+    <h3>#003 – Gigantamax Venusaur</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/charizard-gigantamax.png" alt="Gigantamax Charizard">
+    <h3>#006 – Gigantamax Charizard</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/blastoise-gigantamax.png" alt="Gigantamax Blastoise">
+    <h3>#009 – Gigantamax Blastoise</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/butterfree-gigantamax.png" alt="Gigantamax Butterfree">
+    <h3>#012 – Gigantamax Butterfree</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/pikachu-gigantamax.png" alt="Gigantamax Pikachu">
+    <h3>#025 – Gigantamax Pikachu</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/meowth-gigantamax.png" alt="Gigantamax Meowth">
+    <h3>#052 – Gigantamax Meowth</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/machamp-gigantamax.png" alt="Gigantamax Machamp">
+    <h3>#068 – Gigantamax Machamp</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/gengar-gigantamax.png" alt="Gigantamax Gengar">
+    <h3>#094 – Gigantamax Gengar</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/kingler-gigantamax.png" alt="Gigantamax Kingler">
+    <h3>#099 – Gigantamax Kingler</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/lapras-gigantamax.png" alt="Gigantamax Lapras">
+    <h3>#131 – Gigantamax Lapras</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/eevee-gigantamax.png" alt="Gigantamax Eevee">
+    <h3>#133 – Gigantamax Eevee</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/snorlax-gigantamax.png" alt="Gigantamax Snorlax">
+    <h3>#143 – Gigantamax Snorlax</h3>
+  </section>
+</section>
+
+<!-- Johto -->
+<section id="johto" class="region grid"> 
+	<p> There are no Johto G-Max Pokemon yet</p> 
+</section> 
+
+<!-- Hoenn -->
+<section id="hoenn" class="region grid"> 
+	<p>There are no Hoenn G-Max Pokemon yet</p> 
+</section> 
+
+<!-- Sinnoh -->
+<section id="sinnoh" class="region grid"> 
+	<p>There are no Sinnoh G-Max Pokemon yet</p> 
+</section> 
+
+<!-- Unova -->
+<section id="unova" class="region grid"> 
+ <section class="column">
+    <img src="images/g-max/garbodor-gigantamax.png" alt="Gigantamax Garbodor">
+    <h3>#569 - Gigantamax Garbodor</h3>
+ </section>
+</section> 
+
+<!-- Kalos -->
+<section id="kalos" class="region grid"> 
+	<p> There are no Kalos G-Max Pokemon yet</p> 
+</section> 
+
+<!-- Alola -->
+<section id="alola" class="region grid"> 
+	<p> There are no Alola G-Max Pokemon yet</p> 
+</section> 
+
+<!-- Galar -->
+<section id="galar" class="region grid">
+  <section class="column">
+    <img src="images/g-max/rillaboom-gigantamax.png" alt="Gigantamax Rillaboom">
+    <h3>#812 - Gigantamax Rillaboom</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/cinderace-gigantamax.png" alt="Gigantamax Cinderace">
+    <h3>#815 - Gigantamax Cinderace</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/inteleon-gigantamax.png" alt="Gigantamax Inteleon">
+    <h3>#818 - Gigantamax Inteleon</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/corviknight-gigantamax.png" alt="Gigantamax Corviknight">
+    <h3>#823 - Gigantamax Corviknight</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/orbeetle-gigantamax.png" alt="Gigantamax Orbeetle">
+    <h3>#826 - Gigantamax Orbeetle</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/drednaw-gigantamax.png" alt="Gigantamax Drednaw">
+    <h3>#834 - Gigantamax Drednaw</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/coalossal-gigantamax.png" alt="Gigantamax Coalossal">
+    <h3>#839 - Gigantamax Coalossal</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/flapple-gigantamax.png" alt="Gigantamax Flapple">
+    <h3>#841 - Gigantamax Flapple</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/appletun-gigantamax.png" alt="Gigantamax Appletun">
+    <h3>#842 - Gigantamax Appletun</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/sandaconda-gigantamax.png" alt="Gigantamax Sandaconda">
+    <h3>#844 - Gigantamax Sandaconda</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/toxtricity-gigantamax.png" alt="Gigantamax Toxtricity">
+    <h3>#849 - Gigantamax Toxtricity</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/centiskorch-gigantamax.png" alt="Gigantamax Centiskorch">
+    <h3>#851 - Gigantamax Centiskorch</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/hatterene-gigantamax.png" alt="Gigantamax Hatterene">
+    <h3>#858 - Gigantamax Hatterene</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/grimmsnarl-gigantamax.png" alt="Gigantamax Grimmsnarl">
+    <h3>#861 - Gigantamax Grimmsnarl</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/alcremie-gigantamax.png" alt="Gigantamax Alcremie">
+    <h3>#869 - Gigantamax Alcremie</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/copperajah-gigantamax.png" alt="Gigantamax Copperajah">
+    <h3>#879 - Gigantamax Copperajah</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/duraludon-gigantamax.png" alt="Gigantamax Duraludon">
+    <h3>#884 - Gigantamax Duraludon</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/urshifu-single-strike-gigantamax.png" alt="Gigantamax Urshifu Single-Strike">
+    <h3>#892 - Gigantamax Urshifu (Single-Strike)</h3>
+  </section>
+  <section class="column">
+    <img src="images/g-max/urshifu-rapid-strike-gigantamax.png" alt="Gigantamax Urshifu Rapid-Strike">
+    <h3>#892 - Gigantamax Urshifu (Rapid-Strike)</h3>
+  </section>
+</section>
+ 
+
+<!-- Paldea -->
+<section id="paldea" class="region grid"> 
+	<p> There are no Paldea G-Max Pokemon yet</p> 
+</section>
+
+
+
+
+	
+  </article>
+
+  <footer>
+  <a href="form.html">Contact Us </a>|
+  <a href = "about.html">About</a>
+  </footer>
+</body>
+</html>
+ 
